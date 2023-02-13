@@ -17,4 +17,4 @@ jobs:
           import plateform
           print
           (plateform.processor())
-        shel: python
+        shell: python
