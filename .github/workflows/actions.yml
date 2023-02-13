@@ -10,8 +10,8 @@ jobs:
           ls
       - name: check out
         uses: actions/Checkout@v3.3.0
-          with:
-            path: main
+        with:
+          path: main
       - name: List files
         run: |
           pwd
