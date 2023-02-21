@@ -1,8 +1,10 @@
 name: shell Commmands
 
-on: [push]
+on: 
+  #push:
+  pull_request:
 
-jobs:
+jobs:  
   run-shell-command:
     runs-on: ubuntu-latest
     steps: 
