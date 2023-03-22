@@ -14,7 +14,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: payload
-        run: echo ${{ github.event.client_payload}} 
+        run: |
+          echo ${{ github.event.client_payload}} 
+          sudo apt install jq
+          echo ${{ github.event.client_payload}} | jq -c 
+
       - name: List files
         run: |
           pwd
