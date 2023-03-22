@@ -15,9 +15,8 @@ jobs:
     steps:
       - name: payload
         run: |
-          echo ${{ github.event.client_payload}} 
-          sudo apt install jq
-          echo ${{ github.event.client_payload}} | jq -c 
+          echo ${{ github.event.client_payload.id}} 
+          echo ${{ github.event.client_payload.key}} 
 
       - name: List files
         run: |
